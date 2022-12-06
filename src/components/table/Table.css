@@ -1,0 +1,47 @@
+#tableData{
+    overflow: hidden;
+    width: 100%;
+    padding: 0 1rem;
+    max-width: 500px;
+}
+
+.tableData__row{
+    display: block;
+    border: 1px solid #ccc;
+    padding: .5em .5em .25em .5em;
+    vertical-align: top;
+    cursor: pointer;
+}
+.tableData__row:first-child{
+    border-radius: .5rem .5rem 0 0;
+}
+.tableData__row:last-child{
+    border-radius: 0 0 .5rem .5rem;
+}
+
+.tableData__row__title {
+	width: 300px;
+}
+.tableData__row__title p{
+    margin-top: .8rem;
+}
+
+.tableData__row__content {
+	display: none;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 1rem 0;
+}
+.tableData__row.active .tableData__row__content{
+    display: flex;
+}
+
+.tableData__row__content__year {
+	color: #6D747D;
+	font-size: .8rem;
+}
+.tableData__row__content__value {
+	color: #1d1d1d;
+	font-size: 1.25rem;
+}

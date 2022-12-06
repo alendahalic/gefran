@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+:root{
+  --blu: #005fb6;
+  --pin: #F765A3;
+  --pur: #A155B9;
+  --gre: #1DDD8D;
+  --ora: #FCA626;
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+.App {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+.recharts-tooltip-item-list li *:first-child, .recharts-tooltip-item-list li *:nth-child(2){
+  display: none;
+}
+.recharts-responsive-container {
+	max-width: 710px;
+}
+
+@media screen and (min-width: 1010px) {
+  .App{
+    flex-direction: row;
+  }   
+}

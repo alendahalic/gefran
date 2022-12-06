@@ -1,0 +1,52 @@
+.TableMarker{
+    display: inline-block;
+    width: .8em;
+    height: .8em;
+    margin: 1em;
+    border-radius: 100%;
+}
+
+.TableMarker.blu{
+    background: #fff;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--blu);
+}
+.tableData__row.active .TableMarker.blu{
+    background: var(--blu);
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--blu);
+}
+
+.TableMarker.pin{
+    background: #fff;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--pin);
+}
+.tableData__row.active .TableMarker.pin{
+    background: var(--pin);
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--pin);
+}
+
+.TableMarker.pur{
+    background: #fff;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--pur);
+}
+.tableData__row.active .TableMarker.pur{
+    background: var(--pur);
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--pur);
+}
+
+.TableMarker.gre{
+    background: #fff;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--gre);
+}
+.tableData__row.active .TableMarker.gre{
+    background: var(--gre);
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--gre);
+}
+
+.TableMarker.ora{
+    background: #fff;
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--ora);
+}
+.tableData__row.active .TableMarker.ora{
+    background: var(--ora);
+    box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--ora);
+}

@@ -1,50 +1,111 @@
 import './App.css';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
+
 import Table from './components/table/Table';
+import TableChart from './components/chart/TableChart';
 
-const data = [
+const tableData = [
   {
-    name: '2021',
-    pv: 160.232
+      'title' : 'Ricavi',
+      'marker' : 'blu',
+      'color' : '#005fb6',
+      'data'  :   [
+          {
+              'Year': 2019,
+              'Value': 140.535
+          },
+          {
+              'Year': 2020,
+              'Value': 110.645
+          },
+          {
+              'Year': 2021,
+              'Value': 160.232
+          }
+      ]
   },
   {
-    name: '2020',
-    pv: 129.645
+      'title' : 'EBITDA',
+      'marker' : 'pin',
+      'color' : '#F765A3',
+      'data'  :   [
+          {
+              'Year': 2019,
+              'Value': 90.535
+          },
+          {
+              'Year': 2020,
+              'Value': 130.645
+          },
+          {
+              'Year': 2021,
+              'Value': 160.232
+          }
+      ]
   },
   {
-    name: '2019',
-    pv: 140.535
+      'title' : 'EBIT',
+      'marker' : 'pur',
+      'color' : '#A155B9',
+      'data'  :   [
+          {
+              'Year': 2019,
+              'Value': 49.535
+          },
+          {
+              'Year': 2020,
+              'Value': 70.645
+          },
+          {
+              'Year': 2021,
+              'Value': 60.232
+          }
+      ]
   },
   {
-    name: '2018',
-    pv: 120
-  },  
-  {
-    name: '2017',
-    pv: 50
+      'title' : 'Risultato ante imposte',
+      'marker' : 'gre',
+      'color' : '#1DDD8D',
+      'data'  :   [
+          {
+              'Year': 2019,
+              'Value': 33.535
+          },
+          {
+              'Year': 2020,
+              'Value': 70.645
+          },
+          {
+              'Year': 2021,
+              'Value': 180.232
+          }
+      ]
   },
-];
-
+  {
+      'title' : 'Risultato netto del Gruppo',
+      'marker' : 'ora',
+      'color' : '#FCA626',
+      'data'  :   [
+          {
+              'Year': 2019,
+              'Value': 140.535
+          },
+          {
+              'Year': 2020,
+              'Value': 182.645
+          },
+          {
+              'Year': 2021,
+              'Value': 160.232
+          }
+      ]
+  }
+]
 
 function App() {
   return (
       <div className='App'>
-        <Table />
-        <ResponsiveContainer width='100%' height={360}>
-          <LineChart
-            data={data}
-            margin={{
-              top: 25,
-              right: 30,
-            }}
-          >
-            <CartesianGrid strokeDasharray="5 5" />
-            <XAxis dataKey="name" padding={{ left: 60, right: 60 }} />
-            <YAxis padding={{ top: 50, bottom: 50 }} />
-            <Tooltip itemStyle={{'color':'white'}} labelStyle={{'display': 'none'}} wrapperStyle={{'border': '0', 'outline': '0'}} contentStyle={{'background': '#1D1D1D', 'padding': '.35rem .75rem', 'border': '0', 'borderRadius': '2rem', 'outline': '0'}} />
-            <Line type="linear" dataKey="pv" stroke="#005FB6" strokeWidth={2} activeDot={{ r: 8 }} />
-          </LineChart>
-        </ResponsiveContainer>
+        <Table tData={tableData} />
+        <TableChart tData={tableData} />
       </div>
   );
 }

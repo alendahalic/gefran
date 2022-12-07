@@ -21,11 +21,12 @@
   min-height: 100vh;
   
 }
-.recharts-tooltip-item-list li *:first-child, .recharts-tooltip-item-list li *:nth-child(2){
-  display: none;
-}
-.recharts-responsive-container {
+
+#TableChart {
 	max-width: 710px;
+  width: 95vw;
+  flex: 1;
+  position: relative;
 }
 
 @media screen and (min-width: 1010px) {

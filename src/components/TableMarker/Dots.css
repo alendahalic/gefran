@@ -5,7 +5,9 @@
     margin: 1em;
     border-radius: 100%;
 }
-
+.tableData__row.box .TableMarker{
+    border-radius: 0;
+}
 .TableMarker.blu{
     background: #fff;
     box-shadow: 0px 0px 0px 5px white, 0px 0px 0px 7px var(--blu);
